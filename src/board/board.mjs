@@ -21,7 +21,7 @@ import { verifyLock } from '../evidence/lock.mjs';
 
 export const BOARD_STATUSES = ['proposed', 'ready', 'in_progress', 'review', 'verified', 'blocked'];
 
-/** Vrste zadatka (O-15); kapija zavisi od vrste. */
+/** Vrste zadatka kapija zavisi od vrste. */
 export const TASK_KINDS = ['ingest', 'audit', 'spec', 'code'];
 
 export const BOARD_TRANSITIONS = {
