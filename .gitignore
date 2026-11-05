@@ -1,0 +1,23 @@
+node_modules/
+.venv/
+vendor/
+
+# Isolated worktrees and runtime state
+.worktrees/
+.runtime/
+.agent-context/
+.agent-review/
+memory/
+MEMORY.md
+
+# Caches and outputs
+__pycache__/
+*.pyc
+.cache/
+*.log
+tmp/
+scratch/
+
+# OS
+.DS_Store
+Thumbs.db

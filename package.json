@@ -1,0 +1,18 @@
+{
+  "name": "palimpsest",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Proof-carrying development environment: every change — code or knowledge — carries executable evidence bound to a frozen revision.",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "keywords": [
+    "proof-carrying",
+    "agents",
+    "memory",
+    "evidence",
+    "development-environment"
+  ]
+}
