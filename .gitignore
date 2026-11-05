@@ -7,8 +7,8 @@ vendor/
 .runtime/
 .agent-context/
 .agent-review/
-memory/
-MEMORY.md
+/memory/
+/MEMORY.md
 
 # Caches and outputs
 __pycache__/
