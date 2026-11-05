@@ -161,7 +161,7 @@ function svezinaGate(candidate, repo) {
 }
 
 function nezavisnostGate(envelope) {
- // F3/R10: ista matrica kao kapija verified, prag 2.
+ // ista matrica kao kapija verified, prag 2.
   if (envelope === null || envelope.verifier === null) {
     return { decision: 'weak', reason: 'not-independent' };
   }

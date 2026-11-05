@@ -144,7 +144,7 @@ export async function isMainClean({ repo, allowedDirty = [] } = {}) {
   return true;
 }
 
-// O-70: verified mora nastati kroz tranziciju — poslednji event zadatka je
+// verified mora nastati kroz tranziciju — poslednji event zadatka je
 // 'verified' i njegov 'at' je tačno task.updated. Ručno upisan status ne prolazi.
 function verifiedEventProblem(task, taskPath) {
   const eventsPath = path.join(path.dirname(taskPath), 'events.jsonl');
@@ -238,7 +238,7 @@ async function doIntegrate(options) {
   if (!attestation.attested) {
     return { integrated: false, code: 'E_ATTEST', reason: attestation.reason, check: attestation.check };
   }
- // F4b/R3: verifikacioni zapis mora da se ukrsti sa omotačem (hash, revizija,
+ // verifikacioni zapis mora da se ukrsti sa omotačem (hash, revizija,
  // identitet verifikatora iz verify niti).
   const verificationPath = evidencePath + '.verification.json';
   const verification = checkVerification({ evidencePath, verificationPath });

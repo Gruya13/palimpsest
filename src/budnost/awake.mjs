@@ -166,7 +166,7 @@ export function computeAwake(options = {}) {
     failed: records.reduce((sum, item) => sum + item.record.failed_with.length, 0),
     channelRecords: typeof out === 'string' && out !== '' && existsSync(out) ? countChannelRecords({ memoryRoot }) : 0,
   };
- // F3/R13: zbir maksimuma 112 (≥ 100), pa je 'overheated' (<10) dostižan.
+ // zbir maksimuma 112 (≥ 100), pa je 'overheated' (<10) dostižan.
   const penalty = Math.min(24, 2 * signals.hoursSinceSleep)
     + Math.min(24, 2 * signals.tasksSinceSleep)
     + Math.min(24, 3 * signals.stale)
